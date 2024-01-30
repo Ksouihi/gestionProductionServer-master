@@ -1,8 +1,6 @@
 const db = require("../models");
 const Family = db.family;
 const Op = db.Sequelize.Op;
-
-
 exports.createFamily = (req, res) => {
     console.log(req.body)
     Family.create({
